@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha + Chai Unit Tests</title>
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+    <link rel="stylesheet" href="extra/test-extra.css">
+</head>
+<body>
+    <div id="mocha">
+        <div style="text-align: center">Mocha + Chai Unit Tests
+        </div>
+    </div>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/chai/chai.js"></script>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert, expect = chai.expect, should = chai.should();
+    </script>
+
+    <!-- include source files here... -->
+
+    <script src="../src/dom.js"></script>
+    <script src="spec/test.spec.js"></script>
+
+    <!-- include spec files here... -->
+    <script>
+        mocha.ui('tdd').run();
+        mocha.showOnlyWithErr = false;
+    </script>
+    <script src="extra/test-extra.js"></script>
+</body>
+</html>

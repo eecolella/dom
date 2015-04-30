@@ -1,0 +1,58 @@
+
+#mocha {
+    top                : 0;
+    display            : none;
+    margin             : 2%;
+    padding            : 20px;
+    position           : fixed;
+    z-index            : 9999999;
+    background         : #fff;
+    width              : 96%;
+    max-height         : 96%;
+    overflow           : auto;
+    -moz-box-shadow    : 0 3px 12px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow : 0 3px 12px rgba(0, 0, 0, 0.4);
+    box-shadow         : 0 3px 12px rgba(0, 0, 0, 0.4);
+    box-sizing         : border-box;
+}
+
+#mocha .suite {
+    margin : 0;
+}
+
+#mocha-stats {
+    position   : relative;
+    height     : 40px;
+    margin     : 0 auto !important;
+    max-width  : 280px;
+    text-align : center;
+}
+
+#mocha-stats .progress {
+    float : left;
+}
+
+#mocha h1 {
+    margin-top : 5px;
+}
+
+#mocha .test a.replay {
+    background : #ccc;
+    opacity    : 0.5;
+    color      : #000;
+}
+
+#mocha .test pre {
+    margin             : 5px 0 10px 10px;
+    -moz-box-shadow    : 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow : 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow         : 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#mocha .test {
+    padding : 2px;
+}
+
+#mocha .test:hover {
+    background : #eee;
+}
