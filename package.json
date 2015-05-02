@@ -4,7 +4,13 @@
     "node": ">=0.10.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.6.9",
     "chai": "^2.3.0",
+    "gulp": "^3.8.11",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-size": "^1.2.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.4",
     "karma": "^0.12.31",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.8",
@@ -15,6 +21,11 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-safari-launcher": "^0.1.1",
     "mocha": "^2.2.4"
+  },
+  "single-instance": false,
+  "scripts": {
+    "karma": "node node_modules/karma/bin/karma",
+    "gulp": "node node_modules/gulp/bin/gulp"
   },
   "dependencies": {}
 }
